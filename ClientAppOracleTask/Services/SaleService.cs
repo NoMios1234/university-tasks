@@ -13,7 +13,7 @@ namespace ClientAppOracleTask.Services
     public class SaleService : ISaleService
     {
         const string CONNECTION_STRING = @"Data Source=.\SQLEXPRESS;Database = ShopDB;User ID=dbshop;Password=_Aa123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        const string PROCEDURE_NAME = "AddSale";
+
         private readonly IRepository<Sale> _repository;
 
         public SaleService(IRepository<Sale> repository)
